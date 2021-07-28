@@ -1,0 +1,7 @@
+Change Net Name : Old Net Name=NetLED1_2 New Net Name=LEDG
+Added Pin To Net: NetName=LEDB Pin=LED1-3
+Added Pin To Net: NetName=LEDB Pin=U3-25
+Added Net: Name=LEDB
+Added Pin To Net: NetName=LEDR Pin=LED1-1
+Added Pin To Net: NetName=LEDR Pin=U3-27
+Added Net: Name=LEDR

@@ -1,0 +1,8 @@
+{
+    "board": "esp32:esp32:esp32cam",
+    "programmer": "AVR ISP",
+    "sketch": "WifiCameraCar.ino",
+    "output": "./build",
+    "port": "COM6"
+    
+}

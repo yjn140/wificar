@@ -1,0 +1,52 @@
+{
+    "logs": [
+        {
+            "outputFile": "F:\\myWorkSpace\\0_my_project\\3_wifi_car\\control_software\\Android_app\\wificar_app\\sdk\\build\\intermediates\\res\\merged\\release\\values\\values.xml",
+            "map": [
+                {
+                    "source": "F:\\myWorkSpace\\0_my_project\\3_wifi_car\\control_software\\Android_app\\wificar_app\\sdk\\java\\res\\values\\attrs.xml",
+                    "from": {
+                        "startLines": "2",
+                        "startColumns": "4",
+                        "startOffsets": "55",
+                        "endLines": "9",
+                        "endColumns": "24",
+                        "endOffsets": "368"
+                    },
+                    "to": {
+                        "startLines": "2",
+                        "startColumns": "4",
+                        "startOffsets": "55",
+                        "endLines": "9",
+                        "endColumns": "24",
+                        "endOffsets": "361"
+                    }
+                }
+            ]
+        },
+        {
+            "outputFile": "F:\\myWorkSpace\\0_my_project\\3_wifi_car\\control_software\\Android_app\\wificar_app\\sdk\\build\\intermediates\\incremental\\mergeReleaseResources\\merged.dir\\values\\values.xml",
+            "map": [
+                {
+                    "source": "F:\\myWorkSpace\\0_my_project\\3_wifi_car\\control_software\\Android_app\\wificar_app\\sdk\\java\\res\\values\\attrs.xml",
+                    "from": {
+                        "startLines": "2",
+                        "startColumns": "4",
+                        "startOffsets": "55",
+                        "endLines": "9",
+                        "endColumns": "24",
+                        "endOffsets": "368"
+                    },
+                    "to": {
+                        "startLines": "2",
+                        "startColumns": "4",
+                        "startOffsets": "55",
+                        "endLines": "9",
+                        "endColumns": "24",
+                        "endOffsets": "361"
+                    }
+                }
+            ]
+        }
+    ]
+}

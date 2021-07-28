@@ -1,0 +1,4 @@
+Removed Pin From Net: NetName=DGND Pin=C13-1
+Removed Pin From Net: NetName=3V3 Pin=C13-2
+Removed Member From Class: ClassName=驱动控制板原理图 Member=C13
+Change Net Color : Old Net Color=RGB(158, 161, 117) New Net Color=Default

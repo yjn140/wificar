@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:strrs="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity3">
+
+    <LinearLayout
+        android:id="@+id/linearlayout1"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:alpha="1"
+        android:background="@mipmap/scenes18"
+        android:orientation="vertical"
+        android:padding="10dp"
+        strrs:layout_constraintBottom_toBottomOf="parent"
+        strrs:layout_constraintEnd_toEndOf="parent"
+        strrs:layout_constraintStart_toStartOf="parent"
+        strrs:layout_constraintTop_toTopOf="parent">
+
+        <LinearLayout
+            android:id="@+id/linearlayout2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingBottom="10dp">
+
+            <TextView
+                android:id="@+id/textviewdis1"
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:paddingRight="16dp"
+                android:text="当前方向："
+                android:textColor="#FFEB3B"
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/textviewdis2"
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:paddingRight="16dp"
+                android:text="当前角度："
+                android:textColor="#FFEB3B"
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/textviewdis3"
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:paddingRight="16dp"
+                android:text="当前距离级别："
+                android:textColor="#FFEB3B"
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/textviewdis4"
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:text="云台："
+                android:textColor="#FFEB3B"
+                android:textSize="20sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageButton
+                android:id="@+id/imgbutton1"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_marginRight="16dp"
+                android:alpha="0.8"
+                android:background="@mipmap/t12"
+                android:onClick="button1_click" />
+
+            <Button
+                android:id="@+id/button2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="button2_click"
+                android:text="连接设备" />
+
+            <Button
+                android:id="@+id/button3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="100dp"
+                android:onClick="button3_click"
+                android:text="退出" />
+
+            <TextView
+                android:id="@+id/textView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="150dp"
+                android:layout_weight="0.2"
+                android:text="灯光" />
+
+            <ToggleButton
+                android:id="@+id/toggleButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:onClick="toggleButton_click"
+                android:text="开灯" />
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:padding="5dp">
+
+
+            <!--摇杆-->
+            <com.example.wificar_app.MyRockerView
+                android:id="@+id/rockerXY_View"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginBottom="0dp"
+                android:alpha="0.7"
+                strrs:areaBackground="@drawable/default_area_bg"
+                strrs:rockerBackground="@drawable/yaogan1"
+                strrs:rockerCallBackMode="CALL_BACK_MODE_STATE_CHANGE"
+                strrs:rockerScale="0.6"
+                strrs:rockerSpeedLevel="10" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="2"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="200dp"
+                    android:layout_height="wrap_content"
+                    android:text="速度：" />
+
+            </LinearLayout>
+
+
+            <!--摇杆-->
+            <com.example.wificar_app.MyRockerView
+                android:id="@+id/rockerz_View"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginRight="0dp"
+
+                android:alpha="0.7"
+                strrs:areaBackground="@drawable/default_area_bg"
+                strrs:rockerBackground="@drawable/yaogan1"
+                strrs:rockerCallBackMode="CALL_BACK_MODE_STATE_CHANGE"
+                strrs:rockerScale="0.6"
+                strrs:rockerSpeedLevel="10" />
+
+
+        </LinearLayout>
+    </LinearLayout>
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_begin="20dp" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_begin="20dp" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
